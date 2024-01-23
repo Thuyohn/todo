@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+h1 {
+  color: #FFFFFF;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  /* justify-content: center; */
+  height: 100vh; 
+}
+

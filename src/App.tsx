@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
-import AddTodoForm from './components/AddTodoForm';
-import TodoList from './components/TodoList';
+import AddTodoForm from './components/AddTodoForm/AddTodoForm';
+import TodoList from './components/TodoList/TodoList';
 
 function App() {
   const [todos, setTodos] = useState<string[]>([]);
@@ -10,7 +10,7 @@ function App() {
     setTodos((prevTodos) => [...prevTodos, text])
   }
   return(
-    <div>
+    <div className='app-container'>
       <h1>Todo App</h1>
       <AddTodoForm onAddTodo={handleAddTodo}></AddTodoForm>
       <TodoList todos={todos}></TodoList>

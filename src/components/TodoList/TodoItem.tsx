@@ -1,3 +1,4 @@
+import '../../styles/TodoItem.css'
 type TodoItemProps = {
     text:string
 }
