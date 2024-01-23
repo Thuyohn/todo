@@ -8,3 +8,16 @@
 .input-field {
     margin-right: 10px;
 }
+
+@media (min-width: 600px) and (max-width: 1193px) {
+    .controls-container {
+        width: 40%;
+    }
+}
+
+@media (max-width: 599px)  {
+    .controls-container {
+        width: 70%;
+    }
+}
+
