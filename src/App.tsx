@@ -11,7 +11,7 @@ function App() {
   }
   return(
     <div className='app-container'>
-      <h1>Todo App</h1>
+      <h1 style={{padding: '20px'}}>Todo App</h1>
       <AddTodoForm onAddTodo={handleAddTodo}></AddTodoForm>
       <TodoList todos={todos}></TodoList>
     </div>

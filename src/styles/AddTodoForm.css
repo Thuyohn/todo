@@ -1,0 +1,10 @@
+.controls-container {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    padding-bottom: 20px;
+}
+
+.input-field {
+    margin-right: 10px;
+}

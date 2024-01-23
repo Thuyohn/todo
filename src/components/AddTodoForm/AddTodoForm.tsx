@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import '../../styles/AddTodoForm.css'
 
 
 type AddTodoFormProps = {
@@ -20,9 +21,9 @@ const AddTodoForm = ({onAddTodo}: AddTodoFormProps) => {
     };
 
     return(
-        <div>
-            <input type="text" value={newTodo} onChange={handleInputChange} />
-            <button onClick={handleAddTodo}>Add Todo</button>
+        <div className='controls-container'>
+            <input type="text" className='form-control input-field' value={newTodo} onChange={handleInputChange} />
+            <button className='btn btn-primary btn-sm' style={{width: '50%'}} onClick={handleAddTodo}>Add Todo</button>
         </div>
     );
 };
