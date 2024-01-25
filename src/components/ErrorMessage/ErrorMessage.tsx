@@ -1,14 +1,15 @@
-
 type ErrorMessageProps = {
-    message: string;
-}
+  message: string;
+};
 
-const ErrorMessage = ({message}: ErrorMessageProps) => { 
-    return (
-        <div className="alert alert-danger mt-2" role="alert">
-          {message}
-        </div>
-      );
-}
+const ErrorMessage = ({ message }: ErrorMessageProps) => {
+  return (
+    <div className="toast toast-center">
+      <div className="alert alert-error">
+        <span>{message}</span>
+      </div>
+    </div>
+  );
+};
 
 export default ErrorMessage;
